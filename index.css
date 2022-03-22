@@ -1,0 +1,196 @@
+
+/* importing font family - poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+/* reset browser default style*/
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", Franklin Gothic Medium;
+}
+/*HEADER SECTION*/
+
+header{
+    background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ1fHxsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: 50%;
+    height: 80vh;
+    position: relative;
+}
+
+.header-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    height: 80vh;
+    
+}
+
+.header-content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem 4rem;
+}
+
+/* LOGO*/
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: red
+}
+
+/* NAVLINKS */
+.nav-link {
+    color: rgb(68, 25, 68);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none; /* remove underline */
+    transition: 0.5s;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.nav-link.active{
+    color: red;
+}
+
+.hero-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.full-name {
+    color: orangered;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10px 0;
+}
+
+.brief { 
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* icons*/
+
+.hero-media-wrapper svg {
+    width: 30px;
+    height: 30px;
+    fill: antiquewhite;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    padding: 4px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.btn{
+    background: brown;
+    color: antiquewhite;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 26px;
+    border: none;
+    margin: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.download-btn{
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.download-btn:hover{
+    opacity: 0.8;
+    background-color: brown;
+    color: antiquewhite;
+}
+
+
+/* MAIN BODY CONTENT */
+
+main {
+    margin-top: 90px;
+}
+
+.section {
+    padding: 40px;
+}
+
+.section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about-me {
+    width:70%;
+    margin: 0 auto;
+}
+
+.about-brief {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* CURRENTLY WORKING AT */
+.place-of-work-section {
+    margin: 40px 0;
+    background-color: red;
+    min-height: 3px;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-of-work-section h2{
+    color: antiquewhite;
+}
+
+.place-of-work-wrapper {
+    text-align: center;
+    margin: 40px;
+}
+
+.place-of-work-pill{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 26px;
+    font-size: 14px;
+    transition: 1.5;
+}
